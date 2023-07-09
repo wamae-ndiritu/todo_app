@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const { connectDatabase } = require("./config");
 const { todoRouter } = require("./routes/TodoRoute");
 
@@ -10,6 +11,7 @@ dotenv.config();
 connectDatabase();
 // midlewares
 app.use(express.json());
+app.use(cors());
 
 // API CALLS
 app.use("/api/todo", todoRouter);
