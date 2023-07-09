@@ -2,16 +2,20 @@ import React, { useState, useEffect } from "react";
 import "./Todo.css";
 
 function Todo() {
-  const [notes, setNotes] = useState({ title: "", description: "" });
+  const [notes, setNotes] = useState({
+      title: "",
+      description: "" 
+    });
 
   const handleChange = (e) => {
     setNotes({ ...notes, [e.target.name]: e.target.value });
   };
-
+  
+ 
   console.log(notes);
-  // const handleSubmit = (e)=>{
-  //   e.preventDefault()
-  // }
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+  }
   return (
     <div className="cont">
       <div className="wrapper">
@@ -25,7 +29,7 @@ function Todo() {
             name="description"
             onChange={handleChange}
           ></textarea>
-          <button>Add Todo</button>
+          <button onClick={handleSubmit}>Add Todo</button>
         </div>
         <div className="todo-items">
           <div className="todo-item">
