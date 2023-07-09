@@ -1,13 +1,14 @@
 .cont {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .wrapper {
-  width: 600px;
+  width: 80%;
+  padding: 30px;
   background-color: #ddd;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,6 @@
 
 .input-cont h5 {
   font-size: 18px;
-  margin: 10px 0;
 }
 
 .input-cont input {
@@ -77,10 +77,10 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 5px 30px;
   border-radius: 7px;
   width: 70%;
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .todo-item h6 {
@@ -90,7 +90,7 @@
 
 .todo-item p {
   font-size: 14px;
-  padding: 3px;
+  padding: 1px;
   color: gray;
   font-family: "Courier New", Courier, monospace;
 }
